@@ -1,4 +1,4 @@
-name: RunNaira CI/CD Pipeline
+name: Naira CI/CD Pipeline
 
 on:
   pull_request:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t runnaira-app:ci .
+          docker build -t naira-app:ci .
 
   deploy-to-ghcr:
     needs: build-and-test
